@@ -157,7 +157,7 @@ header nav .container{
 }
 
 /* Boton CV */
-.inicioTexto div a{
+.botonCV{
     display: inline-block;
     padding: 2% 3%;
     background: #0ef;
@@ -168,7 +168,17 @@ header nav .container{
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
+    border: none;
 }
+
+.botonCV:hover{
+    background: #0ef;
+    color: #1f242d;
+    border: none;
+}
+
+
+
 
 .imgPrincipal{
     display: flex;
