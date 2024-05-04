@@ -291,13 +291,7 @@ header nav .container{
     }
 }
 
-
-
-
-
-
 /* Acerca de */
-
 
 /* .container-acercaDe {
     width: 300px;
@@ -362,6 +356,39 @@ header nav .container{
 .textoTipo p{
     color: #fff;
 } */
+
+
+/* Proyectos */
+
+.seccionProyectoTexto{
+    width: 95%;
+}
+
+
+.contactoContenedor{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Contacto */
