@@ -1,0 +1,31 @@
+@media (max-width: 1024px) {}
+
+
+@media(max-width: 991px) {
+    .grilla header {
+        .navbar {
+            .container {
+                .menu {
+                    position: absolute;
+                    background: #1f242d;
+                    width: 100%;
+                    top: 130px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .grilla {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .grilla header {
+        height: 171.8px;
+    }
+
+}

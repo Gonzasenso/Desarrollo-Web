@@ -1,0 +1,13 @@
+// Map
+
+$aBorderRadius: (
+    rectangular: 10%,
+    ovalado: 30%,
+    circular: 50%
+);
+
+@each $borderRadius, $value in $aBorderRadius{
+    a.#{$borderRadius}{
+        border-radius: $value;
+    }
+}

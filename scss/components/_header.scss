@@ -1,0 +1,47 @@
+.grilla header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    padding: 0 8.5%;
+    .navbar{
+        width: 100%;
+        .container{
+            max-width: 100%;
+            margin: 0;
+            width: 100%;
+            .logo{
+                font-size: 25px;
+                font-weight: 500;
+                color: nth($list: $colores, $n: 2);
+            }
+            .botonMenu{
+                border: none;
+                &:focus{
+                    box-shadow: none;
+                }
+                .menuBurguer{
+                    background-image: url(/img/hamburger-menu-svgrepo-com.svg);
+                }
+            }
+            .menu{
+                flex-grow: 0;
+                ul{
+                    align-items: center;
+                    column-gap: 20px;
+                    li{
+                        
+                        a{
+                            color: #fff;
+                            font-size: 18px;
+                            font-weight: 500;
+                            transition: .3s;
+                            &:hover{
+                                color: #0ef;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
