@@ -1,0 +1,81 @@
+.grilla .mainContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: main;
+
+    .seccionContactoTexto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+
+        .contactoContenedor {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            width: 100%;
+
+            .contactoTexto {
+                width: 70%;
+                text-align: center;
+
+                h1 {
+                    font-size: 3.5rem;
+                    font-weight: bold;
+                    color: #0ef;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    color: #fff;
+                }
+            }
+
+            .contenidoFormulario {
+                width: 26vw;
+                background-color: #fff;
+                border-radius: 3%;
+                box-shadow: 0 0 10px #fff;
+
+                form {
+                    margin: 3%;
+
+                    .formTipo {
+                        margin-bottom: 2%;
+
+                        label {
+                            display: block;
+                            font-size: 1rem;
+                            font-weight: 500;
+                            margin-bottom: 1%;
+                        }
+
+                        input,
+                        textarea {
+                            width: 100%;
+                            padding: 2.5%;
+                            border: 1px solid #ccc;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    .botonEnviar {
+                        display: block;
+                        width: 100%;
+                        padding: 10px;
+                        background-color: #007bff;
+                        color: #fff;
+                        border: none;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,7 +1,6 @@
 .grilla header{
     grid-area: header;
-    display: flex;
-    align-items: center;
+    @include flex(row, center, center);
     padding: 0 8.5%;
     .navbar{
         width: 100%;
@@ -10,8 +9,7 @@
             margin: 0;
             width: 100%;
             .logo{
-                font-size: 25px;
-                font-weight: 500;
+                @include estilosTexto(25px, 500);
                 color: nth($list: $colores, $n: 2);
             }
             .botonMenu{
@@ -32,8 +30,7 @@
                         
                         a{
                             color: #fff;
-                            font-size: 18px;
-                            font-weight: 500;
+                            @include estilosTexto(18px, 500); // Estilo font-size y font-weight. (si quiero agregarle font-style lo hago, sino el condicional lo deja como null)
                             transition: .3s;
                             &:hover{
                                 color: #0ef;

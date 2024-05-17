@@ -1,4 +1,54 @@
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+    .grilla .main-index {
+        .seccionInicioTexto {
+            .inicioContenedor {
+                .inicioTexto {
+                    width: 87%;
+                }
+
+                .imgPrincipal {
+                    img {
+                        width: 35vw;
+                    }
+                }
+            }
+        }
+    }
+
+    .grilla .mainContacto {
+
+        .seccionContactoTexto {
+
+            .contactoContenedor {
+
+                .contactoTexto {
+                    width: 90%;
+
+                    h1 {}
+
+                    p {}
+                }
+
+                .contenidoFormulario {
+                    width: 35vw;
+                    form {
+
+                        .formTipo {
+
+                            label {}
+
+                            input,
+                            textarea {}
+                        }
+
+                        .botonEnviar {}
+                    }
+                }
+            }
+
+        }
+    }
+}
 
 
 @media(max-width: 991px) {
@@ -27,5 +77,77 @@
     .grilla header {
         height: 171.8px;
     }
+
+    .grilla .main-index {
+        padding: 1rem;
+
+        .seccionInicioTexto {
+            .inicioContenedor {
+                grid-template-columns: 1fr;
+
+                .inicioTexto {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .imgPrincipal {
+                    padding: 30px 0;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .grilla .mainContacto {
+        padding: 1rem;
+
+        .seccionContactoTexto {
+
+            .contactoContenedor {
+                grid-template-columns: 1fr;
+
+                .contactoTexto {
+                    width: 90%;
+
+                    h1 {
+                        font-size: 2.5em;
+                    }
+
+                    p {}
+                }
+
+                .contenidoFormulario {
+                    margin: 30px 0;
+                    width: 70vw;
+
+                    form {
+
+                        .formTipo {
+
+                            label {}
+
+                            input,
+                            textarea {}
+                        }
+
+                        .botonEnviar {}
+                    }
+                }
+            }
+
+        }
+    }
+
+    .grilla footer {
+
+        .redeSociales {
+            width: 100%;
+        }
+    }
+
 
 }
