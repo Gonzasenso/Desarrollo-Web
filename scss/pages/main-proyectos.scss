@@ -7,15 +7,46 @@
 
     .seccionProyectoTexto {
         display: grid;
-        grid-template-columns: 20% 20% 20%;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         width: 100%;
         height: 100%;
-        justify-content: center;
-        gap: 5%;
+        justify-items: center;
+        row-gap: 5%;
+        padding: 0 6% 0 6%;
 
         .card {
-            width: 20vw;
+            width: 23vw;
+            height: 55vh;
+            img{
+
+            }
+            .cardInfo{
+
+                h1, h2, h3, h4, h5, h6{
+                @extend %estilosEncabezados;
+                }
+                p{
+                    color: #1f242d;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                }
+                a{
+                    background-color: #1f242d;
+                    color: #0ef;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    border-color: #0ef;
+                    &:hover{
+                        background-color: #0ef;
+                        color: #1f242d;
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                        border-color: #1f242d;
+                        transition: .5s ease;
+                    }
+                }
+            }
         }
     }
 }
