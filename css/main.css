@@ -68,7 +68,7 @@ a.circular {
   box-shadow: none;
 }
 .grilla header .navbar .container .botonMenu .menuBurguer {
-  background-image: url(/img/hamburger-menu-svgrepo-com.svg);
+  background-image: url(../img/hamburger-menu-svgrepo-com.svg);
 }
 .grilla header .navbar .container .menu {
   flex-grow: 0;
