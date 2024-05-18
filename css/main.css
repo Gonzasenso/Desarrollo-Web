@@ -263,10 +263,20 @@ a.circular {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+  background-color: #1f242d;
+  color: #0ef;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-color: #0ef;
   border-radius: 5px;
+}
+.grilla .mainContacto .seccionContactoTexto .contactoContenedor .contenidoFormulario form .botonEnviar:hover {
+  background-color: #0ef;
+  color: #1f242d;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-color: #1f242d;
+  transition: 0.5s ease;
 }
 
 .grilla footer {
