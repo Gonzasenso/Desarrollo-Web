@@ -1,0 +1,118 @@
+.grilla .mainAcercaDe {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    padding-top: 2%;
+    .contenedorGrillaAcerca {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        height: 100%;
+        width: 100%;
+        row-gap: 10%;
+        .seccionInfoPersonal {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            color: #fff;
+            justify-items: center; 
+            align-content: center;
+            padding: 0 10.5% 0 10.5%;
+
+            .acercaDeTexto {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                
+
+                h1 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: #0ef;
+                    
+                }
+
+                p {
+                    @include estilosTexto(1.3rem, 500);
+                    margin: 0;
+                }
+            }
+
+            .contenedorImg {
+                display: flex;
+                align-items: center;
+                padding-left: 20%;
+                img {
+                    width: 22em;
+                    border-radius: 15%;
+                    box-shadow: 0 0 20px #fff;
+                    
+                }
+            }
+        }
+
+        .seccionAcercaHerramientas {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            color: #fff;
+            justify-items: center; 
+            align-content: center;
+            padding: 0 6% 0 6%;
+                .acercadeHerramientas {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 90%;
+                    h2 {
+                        font-size: 2rem;
+                        font-weight: 600;
+                        color: #0ef;
+                    }
+
+                    p {
+                        @include estilosTexto(1.3rem, 500);
+                        margin: 0;
+                    }
+                }
+
+                .contenedorHerramientas{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 90%;
+                    padding-top: 1%;
+                    .divBoton{
+                        
+                        .botonDesplegable{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #0ef;
+                            color: #1f242d;
+                            font-weight: 600;
+                            .iconoBoton{
+                                margin-right: 10px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    .contenedorCards{
+                        
+                        .cards{
+                            display: flex;
+                            flex-direction: row;
+                            color: #fff;
+                            background-color: transparent;
+                            border: none;
+                            font-size: 4rem;
+                            column-gap: 1%;
+                        }
+                    }
+                }
+        }
+    }
+
+}

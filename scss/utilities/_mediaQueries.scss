@@ -1,4 +1,5 @@
 @media(max-width: 1200px) {
+
     .grilla .mainProyectos {
 
         .seccionProyectoTexto {
@@ -13,6 +14,7 @@
 
 
 @media (max-width: 1024px) {
+
     .grilla .main-index {
         .seccionInicioTexto {
             .inicioContenedor {
@@ -27,6 +29,57 @@
                 }
             }
         }
+    }
+
+
+    .grilla .mainAcercaDe {
+        .contenedorGrillaAcerca {
+            .seccionInfoPersonal {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                row-gap: 5%;
+
+                .acercaDeTexto {
+                    text-align: center;
+
+                    h1 {}
+
+                    p {}
+                }
+
+                .contenedorImg {
+                    padding: 0;
+
+                    img {}
+                }
+            }
+
+            .seccionAcercaHerramientas {
+                .acercadeHerramientas {
+                    h2 {}
+
+                    p {}
+                }
+
+                .contenedorHerramientas {
+                    .divBoton {
+
+                        .botonDesplegable {
+                            .iconoBoton {}
+                        }
+                    }
+
+                    .contenedorCards {
+
+                        .cards {
+                            justify-content: center;
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
 
@@ -131,6 +184,62 @@
         }
     }
 
+
+
+    .grilla .mainAcercaDe {
+        .contenedorGrillaAcerca {
+            .seccionInfoPersonal {
+
+                padding: 0 5% 0 5%;
+
+                .acercaDeTexto {
+
+
+                    h1 {}
+
+                    p {}
+                }
+
+                .contenedorImg {
+                    padding-top: 20px;
+
+                    img {
+                        width: 18em;
+                        height: auto;
+                    }
+                }
+            }
+
+            .seccionAcercaHerramientas {
+                text-align: center;
+
+                .acercadeHerramientas {
+                    h2 {}
+
+                    p {}
+                }
+
+                .contenedorHerramientas {
+                    .divBoton {
+                        display: flex;
+                        justify-content: center;
+
+                        .botonDesplegable {
+                            .iconoBoton {}
+                        }
+                    }
+
+                    .contenedorCards {
+
+                        .cards {}
+                    }
+                }
+            }
+        }
+
+    }
+
+
     .grilla .mainProyectos {
 
         .seccionProyectoTexto {
@@ -196,6 +305,59 @@
     }
 }
 
+
+@media(max-width: 450px) {
+    .grilla .mainAcercaDe {
+
+        .contenedorGrillaAcerca {
+            .seccionInfoPersonal {
+                grid-template-rows: 72% 28%;
+                gap: 0;
+
+
+                .acercaDeTexto {
+
+
+                    h1 {}
+
+                    p {}
+                }
+
+                .contenedorImg {
+                    padding: 10% 0 10% 0;
+
+                    img {
+                        width: 15em;
+                    }
+                }
+            }
+
+            .seccionAcercaHerramientas {
+
+                .acercadeHerramientas {
+                    h2 {}
+
+                    p {}
+                }
+
+                .contenedorHerramientas {
+                    .divBoton {
+
+                        .botonDesplegable {
+                            .iconoBoton {}
+                        }
+                    }
+
+                    .contenedorCards {
+
+                        .cards {}
+                    }
+                }
+            }
+        }
+
+    }
+}
 
 @media (max-width: 320px) {
     .grilla header {

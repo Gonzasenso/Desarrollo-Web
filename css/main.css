@@ -94,9 +94,6 @@ a.circular {
   grid-area: main;
 }
 .grilla .main-index .seccionInicioTexto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #fff;
   width: 95%;
 }
@@ -157,6 +154,110 @@ a.circular {
   width: 25vw;
 }
 
+.grilla .mainAcercaDe {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  padding-top: 2%;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  height: 100%;
+  width: 100%;
+  row-gap: 10%;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  color: #fff;
+  justify-items: center;
+  align-content: center;
+  padding: 0 10.5% 0 10.5%;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal .acercaDeTexto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal .acercaDeTexto h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0ef;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal .acercaDeTexto p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal .contenedorImg {
+  display: flex;
+  align-items: center;
+  padding-left: 20%;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal .contenedorImg img {
+  width: 22em;
+  border-radius: 15%;
+  box-shadow: 0 0 20px #fff;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca .seccionAcercaHerramientas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  color: #fff;
+  justify-items: center;
+  align-content: center;
+  padding: 0 6% 0 6%;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca .seccionAcercaHerramientas .acercadeHerramientas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca .seccionAcercaHerramientas .acercadeHerramientas h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0ef;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca .seccionAcercaHerramientas .acercadeHerramientas p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca .seccionAcercaHerramientas .contenedorHerramientas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  padding-top: 1%;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca .seccionAcercaHerramientas .contenedorHerramientas .divBoton .botonDesplegable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0ef;
+  color: #1f242d;
+  font-weight: 600;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca .seccionAcercaHerramientas .contenedorHerramientas .divBoton .botonDesplegable .iconoBoton {
+  margin-right: 10px;
+  font-weight: 600;
+}
+.grilla .mainAcercaDe .contenedorGrillaAcerca .seccionAcercaHerramientas .contenedorHerramientas .contenedorCards .cards {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 4rem;
+  column-gap: 1%;
+}
+
 .grilla .mainProyectos {
   grid-area: main;
   display: flex;
@@ -206,9 +307,6 @@ a.circular {
   grid-area: main;
 }
 .grilla .mainContacto .seccionContactoTexto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 95%;
 }
 .grilla .mainContacto .seccionContactoTexto .contactoContenedor {
@@ -326,6 +424,21 @@ a.circular {
   .grilla .main-index .seccionInicioTexto .inicioContenedor .imgPrincipal img {
     width: 35vw;
   }
+  .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 5%;
+  }
+  .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal .acercaDeTexto {
+    text-align: center;
+  }
+  .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal .contenedorImg {
+    padding: 0;
+  }
+  .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionAcercaHerramientas .contenedorHerramientas .contenedorCards .cards {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .grilla .mainProyectos .seccionProyectoTexto {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -374,6 +487,23 @@ a.circular {
     width: 100%;
     height: auto;
   }
+  .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal {
+    padding: 0 5% 0 5%;
+  }
+  .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal .contenedorImg {
+    padding-top: 20px;
+  }
+  .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal .contenedorImg img {
+    width: 18em;
+    height: auto;
+  }
+  .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionAcercaHerramientas {
+    text-align: center;
+  }
+  .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionAcercaHerramientas .contenedorHerramientas .divBoton {
+    display: flex;
+    justify-content: center;
+  }
   .grilla .mainProyectos .seccionProyectoTexto {
     grid-template-columns: 1fr;
   }
@@ -403,6 +533,18 @@ a.circular {
   }
   .grilla footer .redeSociales {
     width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal {
+    grid-template-rows: 72% 28%;
+    gap: 0;
+  }
+  .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal .contenedorImg {
+    padding: 10% 0 10% 0;
+  }
+  .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal .contenedorImg img {
+    width: 15em;
   }
 }
 @media (max-width: 320px) {
