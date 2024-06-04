@@ -1,6 +1,20 @@
 %estilosBotones{
-    background-color: #0ef;
+    display: inline-block;
+    padding: 3% 11%;
+    background: #0ef;
     color: #1f242d;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+    &:hover{
+        background: #0ef;
+        color: #1f242d;
+        border: none;
+    }
 }
 
 %estilosEncabezados{

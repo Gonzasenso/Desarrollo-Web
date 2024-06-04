@@ -34,6 +34,25 @@ a.circular {
   border-radius: 50%;
 }
 
+.grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios .boton {
+  display: inline-block;
+  padding: 3% 11%;
+  background: #0ef;
+  color: #1f242d;
+  border-radius: 40px;
+  box-shadow: 0 0 10px #0ef;
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+}
+.grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios .boton:hover {
+  background: #0ef;
+  color: #1f242d;
+  border: none;
+}
+
 .grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h1, .grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h2, .grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h3, .grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h4, .grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h5, .grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h6 {
   color: #1f242d;
   font-size: 1.7rem;
@@ -300,6 +319,48 @@ a.circular {
   transition: 0.5s ease;
 }
 
+.grilla .mainServicios {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grilla .mainServicios .seccionServicios {
+  padding: 0 10rem;
+}
+.grilla .mainServicios .seccionServicios .contenedorServicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+.grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios {
+  background-color: #323946;
+  padding: 2rem 1rem 3rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid #1f242d;
+  transition: 0.5s ease;
+}
+.grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios:hover {
+  border-color: #0ef;
+  transform: scale(1.02);
+}
+.grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios .icono {
+  font-size: 6rem;
+  color: #0ef;
+}
+.grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios h1,
+.grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios h2,
+.grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios h3 {
+  font-size: 2.4rem;
+  color: #fff;
+}
+.grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios p {
+  font-size: 1.4rem;
+  margin: 1rem 0 3rem;
+  color: #fff;
+}
 .grilla .mainContacto {
   display: flex;
   justify-content: center;
@@ -383,7 +444,7 @@ a.circular {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem;
-  background-color: #1f242d;
+  background-color: transparent;
 }
 .grilla footer .redeSociales {
   display: flex;
