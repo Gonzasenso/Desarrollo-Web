@@ -17,7 +17,7 @@
 
         .card {
             width: 23vw;
-            height: 55vh;
+            
             img{
 
             }
@@ -32,17 +32,13 @@
                     font-weight: 500;
                 }
                 a{
-                    background-color: #1f242d;
-                    color: #0ef;
+                    background-color: #0ef;
+                    color: #1f242d;
                     font-size: 1.1rem;
                     font-weight: 500;
-                    border-color: #0ef;
+                    border-color: #1f242d;
                     &:hover{
-                        background-color: #0ef;
-                        color: #1f242d;
-                        font-size: 1.1rem;
-                        font-weight: 500;
-                        border-color: #1f242d;
+                        border-color: #0ef;
                         transition: .5s ease;
                     }
                 }
