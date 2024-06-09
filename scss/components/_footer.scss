@@ -1,16 +1,18 @@
-.grilla footer{
+.grilla footer {
     grid-area: footer;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem;
     background-color: transparent;
-    .redeSociales{
+
+    .redeSociales {
         display: flex;
         justify-content: center;
         width: 30%;
         column-gap: 5%;
-        a{
+
+        a {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,7 +25,8 @@
             color: #0ef;
             text-decoration: none;
             transition: .5s ease;
-            &:hover{
+
+            &:hover {
                 background: #0ef;
                 color: #1f242d;
                 box-shadow: 0 0 20px #0ef;

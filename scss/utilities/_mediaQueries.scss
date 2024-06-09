@@ -1,6 +1,7 @@
+/* Media Query para Portatiles L */
 @media(max-width: 1200px) {
 
-    html{
+    html {
         font-size: 90%;
     }
 
@@ -43,10 +44,8 @@
     }
 }
 
-
+/* Media Query para Portatiles */
 @media (max-width: 1024px) {
-
-
 
     .grilla .main-index {
         .seccionInicioTexto {
@@ -207,7 +206,7 @@
     }
 }
 
-
+/* Media Query para encabezado estilo hamburguesa */
 @media(max-width: 991px) {
     .grilla header {
         .navbar {
@@ -225,7 +224,7 @@
 }
 
 
-/* Media Query para dispositivos móviles */
+/* Media Query para Tablets */
 @media (max-width: 768px) {
     .grilla {
         grid-template-columns: 1fr;
@@ -249,10 +248,10 @@
                 }
 
                 .imgPrincipal {
-                    padding: 30px 0;
+                    padding: 50px 0;
 
                     img {
-                        width: 100%;
+                        width: 80%;
                         height: auto;
                     }
                 }
@@ -339,15 +338,16 @@
             width: 100%;
 
             .seccionServicios {
-                
+
                 padding: 0%;
+
                 .contenedorServicios {
                     grid-template-columns: 1fr;
                     grid-template-rows: repeat(3, 1fr);
 
                     .cajaServicios {
                         width: 90vw;
-                        
+
                         &:nth-child(3) {
                             grid-column: auto;
                         }
@@ -362,9 +362,7 @@
 
                         p {}
 
-                        .boton {
-                        
-                        }
+                        .boton {}
                     }
                 }
             }
@@ -421,8 +419,8 @@
     }
 }
 
-
-@media(max-width: 450px) {
+/* Media Query para Moviles L */
+@media(max-width: 425px) {
     .grilla .mainAcercaDe {
 
         .contenedorGrillaAcerca {
@@ -475,6 +473,7 @@
     }
 }
 
+/* Media Query para Moviles S */
 @media (max-width: 320px) {
     .grilla header {
         padding: 0 5%;
@@ -496,6 +495,5 @@
             }
         }
     }
-
 
 }

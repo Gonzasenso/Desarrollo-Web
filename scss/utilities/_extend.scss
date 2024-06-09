@@ -1,4 +1,4 @@
-%estilosBotones{
+%estilosBotones {
     display: inline-block;
     padding: 3% 6%;
     background: #0ef;
@@ -10,14 +10,15 @@
     font-weight: 700;
     letter-spacing: 1px;
     border: none;
-    &:hover{
+
+    &:hover {
         background: #0ef;
         color: #1f242d;
         border: none;
     }
 }
 
-%estilosEncabezados{
+%estilosEncabezados {
     color: #1f242d;
     font-size: 1.7rem;
     font-weight: 600;

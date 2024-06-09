@@ -6,8 +6,8 @@ $aBorderRadius: (
     circular: 50%
 );
 
-@each $borderRadius, $value in $aBorderRadius{
-    a.#{$borderRadius}{
+@each $borderRadius, $value in $aBorderRadius {
+    a.#{$borderRadius} {
         border-radius: $value;
     }
 }
