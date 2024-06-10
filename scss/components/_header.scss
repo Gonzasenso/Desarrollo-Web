@@ -1,39 +1,55 @@
-.grilla header{
-    grid-area: header;
-    @include flex(row, center, center);
-    padding: 0 8.5%;
-    .navbar{
-        width: 100%;
-        .container{
-            max-width: 100%;
-            margin: 0;
+.grilla {
+    header {
+        grid-area: header;
+        @include flex(row, center, center);
+        padding: 4% 8.5%;
+        min-height: 170px;
+
+        .navbar {
             width: 100%;
-            .logo{
-                @include estilosTexto(25px, 500);
-                color: nth($list: $colores, $n: 2);
-            }
-            .botonMenu{
-                border: none;
-                &:focus{
-                    box-shadow: none;
+
+            .container {
+                max-width: 100%;
+                margin: 0;
+                width: 100%;
+                padding: 0%;
+
+                .logo {
+                    @include estilosTexto(25px, 500);
+                    color: nth($list: $colores, $n: 2);
                 }
-                .menuBurguer{
-                    background-image: url(../img/hamburger-menu-svgrepo-com.svg);
+
+                .botonMenu {
+                    border: none;
+                    padding: 0;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+
+                    .menuBurguer {
+                        background-image: url(../img/hamburger-menu-svgrepo-com.svg);
+                    }
                 }
-            }
-            .menu{
-                flex-grow: 0;
-                ul{
-                    align-items: center;
-                    column-gap: 20px;
-                    li{
-                        
-                        a{
-                            color: #fff;
-                            @include estilosTexto(18px, 500); // Estilo font-size y font-weight. (si quiero agregarle font-style lo hago, sino el condicional lo deja como null)
-                            transition: .3s;
-                            &:hover{
-                                color: #0ef;
+
+                .menu {
+                    flex-grow: 0;
+
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 20px;
+
+                        li {
+
+                            a {
+                                color: #fff;
+                                @include estilosTexto(18px, 500); // Estilo font-size y font-weight. (si quiero agregarle font-style lo hago, sino el condicional lo deja como null)
+                                transition: .3s;
+
+                                &:hover {
+                                    color: #0ef;
+                                }
                             }
                         }
                     }

@@ -1,179 +1,376 @@
+/* Media Query para Portatiles L */
 @media(max-width: 1200px) {
 
-    .grilla .mainProyectos {
+    // HTML
+    html {
+        font-size: 90%;
+    }
 
-        .seccionProyectoTexto {
+    // Inicio
+    .grilla {
+        .main-index {
+            .seccionInicioTexto {
+                .inicioContenedor {
 
-            .card {
-                width: 26vw;
-                height: 55vh;
+                    .imgPrincipal {
+                        img {
+                            width: 27vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Proyectos
+    .grilla {
+        .mainProyectos {
+
+            .seccionProyectoTexto {
+
+                .card {
+                    width: 26vw;
+                    height: 55vh;
+                }
+            }
+        }
+    }
+
+
+    // Footer
+    .grilla {
+        footer {
+
+            .redeSociales {
+                width: 40%;
             }
         }
     }
 }
 
 
+
+
+/* Media Query para Portatiles */
 @media (max-width: 1024px) {
 
-    .grilla .main-index {
-        .seccionInicioTexto {
-            .inicioContenedor {
-                .inicioTexto {
-                    width: 87%;
+    // Inicio
+    .grilla {
+        .main-index {
+
+            .seccionInicioTexto {
+
+                .inicioContenedor {
+
+                    .inicioTexto {
+
+                        h1 {
+                            font-size: 2.6rem;
+                            font-weight: 700;
+                        }
+
+                        h2 {
+                            font-size: 2.4rem;
+                            font-weight: 700;
+                            margin: 1% 0 1% 0;
+                        }
+
+                        h3 {
+                            font-size: 2.6rem;
+                            font-weight: 700;
+                        }
+
+                        div {
+
+                            .botonCV {
+                                padding: 14px 24px;
+
+                            }
+                        }
+                    }
+
+                    .imgPrincipal {
+
+                        img {
+                            width: 30vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Acerca de
+    .grilla {
+        .mainAcercaDe {
+            .contenedorGrillaAcerca {
+                .seccionInfoPersonal {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(2, 1fr);
+                    row-gap: 5%;
+
+                    .acercaDeTexto {
+                        text-align: center;
+
+                    }
+
+                    .contenedorImg {
+                        padding: 0;
+
+                    }
                 }
 
-                .imgPrincipal {
-                    img {
+                .seccionAcercaHerramientas {
+
+                    .contenedorHerramientas {
+
+                        .contenedorCards {
+
+                            .cards {
+                                justify-content: center;
+                                flex-wrap: wrap;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    // Proyectos
+    .grilla {
+        .mainProyectos {
+
+            .seccionProyectoTexto {
+                grid-template-columns: repeat(2, 1fr);
+
+                .card {
+                    width: 33vw;
+                }
+            }
+        }
+    }
+
+
+
+    // Servicios
+    .grilla {
+        .mainServicios {
+            padding: 4% 0 4% 0;
+
+            .seccionServicios {
+
+                .contenedorServicios {
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto auto;
+                    gap: 2rem;
+
+                    .cajaServicios {
+                        width: 37vw;
+
+                        &:nth-child(3) {
+                            grid-column: span 2;
+                            justify-self: center;
+                        }
+
+                        .boton {
+                            padding: 2% 5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Contacto
+    .grilla {
+        .mainContacto {
+
+            .seccionContactoTexto {
+
+                .contactoContenedor {
+
+                    .contactoTexto {
+                        width: 90%;
+
+                    }
+
+                    .contenidoFormulario {
                         width: 35vw;
+
                     }
                 }
+
             }
         }
     }
 
 
-    .grilla .mainAcercaDe {
-        .contenedorGrillaAcerca {
-            .seccionInfoPersonal {
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(2, 1fr);
-                row-gap: 5%;
 
-                .acercaDeTexto {
-                    text-align: center;
+    // Footer
+    .grilla {
+        footer {
 
-                    h1 {}
-
-                    p {}
-                }
-
-                .contenedorImg {
-                    padding: 0;
-
-                    img {}
-                }
-            }
-
-            .seccionAcercaHerramientas {
-                .acercadeHerramientas {
-                    h2 {}
-
-                    p {}
-                }
-
-                .contenedorHerramientas {
-                    .divBoton {
-
-                        .botonDesplegable {
-                            .iconoBoton {}
-                        }
-                    }
-
-                    .contenedorCards {
-
-                        .cards {
-                            justify-content: center;
-                            flex-wrap: wrap;
-                        }
-                    }
-                }
-            }
-        }
-
-    }
-
-
-    .grilla .mainProyectos {
-
-        .seccionProyectoTexto {
-            grid-template-columns: repeat(2, 1fr);
-
-            .card {
-                width: 33vw;
+            .redeSociales {
+                width: 100%;
             }
         }
     }
 
-
-    .grilla .mainContacto {
-
-        .seccionContactoTexto {
-
-            .contactoContenedor {
-
-                .contactoTexto {
-                    width: 90%;
-
-                    h1 {}
-
-                    p {}
-                }
-
-                .contenidoFormulario {
-                    width: 35vw;
-
-                    form {
-
-                        .formTipo {
-
-                            label {}
-
-                            input,
-                            textarea {}
-                        }
-
-                        .botonEnviar {}
-                    }
-                }
-            }
-
-        }
-    }
 }
 
 
+
+/* Media Query para encabezado estilo hamburguesa */
 @media(max-width: 991px) {
-    .grilla header {
-        .navbar {
-            .container {
-                .menu {
-                    position: absolute;
-                    background: #1f242d;
-                    width: 100%;
-                    top: 90px;
-                    z-index: 1;
+
+    // Header
+    .grilla {
+        header {
+            .navbar {
+                .container {
+                    .menu {
+                        position: absolute;
+                        background: #1f242d;
+                        width: 100%;
+                        top: 90px;
+                        z-index: 1;
+                    }
                 }
             }
         }
     }
+
 }
 
 
-/* Media Query para dispositivos móviles */
+/* Media Query para Tablets */
 @media (max-width: 768px) {
+
+    // Grilla
     .grilla {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
 
-    .grilla header {
-        height: 171.8px;
+
+    // Header
+    .grilla {
+        header {
+            height: 171.8px;
+        }
     }
 
-    .grilla .main-index {
-        padding: 1rem;
 
-        .seccionInicioTexto {
-            .inicioContenedor {
-                grid-template-columns: 1fr;
 
-                .inicioTexto {
-                    width: 100%;
-                    text-align: center;
+    // Inicio
+    .grilla {
+        .main-index {
+            padding: 1rem;
+
+            .seccionInicioTexto {
+                padding: 0 4% 0 4%;
+
+                .inicioContenedor {
+                    grid-template-columns: 1fr;
+
+                    .inicioTexto {
+                        width: 100%;
+                        text-align: center;
+
+                        h1 {
+                            font-size: 3rem;
+                        }
+
+                        h2 {
+                            font-size: 2.8rem;
+                        }
+
+                        h3 {
+                            font-size: 3rem;
+                        }
+
+                        p {
+                            font-size: 1.3rem;
+                        }
+
+                        div {
+
+                            .botonCV {
+                                padding: 18px 28px;
+                                font-size: 18px;
+
+                                &:hover {
+                                    background: #0ef;
+                                    color: #1f242d;
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .imgPrincipal {
+                        padding: 70px 0;
+
+                        img {
+                            width: 50vw;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Acerca de
+    .grilla {
+        .mainAcercaDe {
+            .contenedorGrillaAcerca {
+                .seccionInfoPersonal {
+
+                    padding: 0 5% 0 5%;
+
+                    .contenedorImg {
+                        padding-top: 20px;
+
+                        img {
+                            width: 18em;
+                            height: auto;
+                        }
+                    }
                 }
 
-                .imgPrincipal {
-                    padding: 30px 0;
+                .seccionAcercaHerramientas {
+                    text-align: center;
+
+                    .contenedorHerramientas {
+                        .divBoton {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+    // Proyectos
+    .grilla {
+        .mainProyectos {
+
+            .seccionProyectoTexto {
+                grid-template-columns: 1fr;
+
+                .card {
+                    width: 70vw;
+                    height: 70vh;
 
                     img {
                         width: 100%;
@@ -186,196 +383,181 @@
 
 
 
-    .grilla .mainAcercaDe {
-        .contenedorGrillaAcerca {
-            .seccionInfoPersonal {
+    // Servicios
+    .grilla {
+        .mainServicios {
+            padding: 0 0 6% 0;
+            width: 100%;
 
-                padding: 0 5% 0 5%;
+            .seccionServicios {
 
-                .acercaDeTexto {
+                padding: 0%;
+
+                .contenedorServicios {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(3, 1fr);
+
+                    .cajaServicios {
+                        width: 90vw;
+
+                        &:nth-child(3) {
+                            grid-column: auto;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
 
 
-                    h1 {}
+    // Contacto
+    .grilla {
+        .mainContacto {
+            padding: 1rem;
 
-                    p {}
+            .seccionContactoTexto {
+
+                .contactoContenedor {
+                    grid-template-columns: 1fr;
+
+                    .contactoTexto {
+                        width: 90%;
+
+                        h1 {
+                            font-size: 2.5em;
+                        }
+
+                    }
+
+                    .contenidoFormulario {
+                        margin: 30px 0;
+                        width: 70vw;
+
+                    }
                 }
 
-                .contenedorImg {
-                    padding-top: 20px;
+            }
+        }
+    }
+
+
+
+    // Footer
+    .grilla {
+        footer {
+
+            .redeSociales {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* Media Query para Moviles L */
+@media(max-width: 425px) {
+
+    // Inicio
+    .grilla {
+        .main-index {
+
+            .seccionInicioTexto {
+                padding: 0 4% 0 4%;
+
+                .inicioContenedor {
+
+                    .inicioTexto {
+
+                        h1 {
+                            font-size: 2.4rem;
+                        }
+
+                        h2 {
+                            font-size: 2.2rem;
+                        }
+
+                        h3 {
+                            font-size: 2.4rem;
+                        }
+
+                        p {
+                            font-size: 1.2rem;
+                        }
+
+                        div {
+
+                            .botonCV {
+                                padding: 14px 24px;
+                            }
+                        }
+                    }
+
+                    .imgPrincipal {
+
+                        img {
+                            width: 70vw;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Acerca de
+    .grilla {
+        .mainAcercaDe {
+
+            .contenedorGrillaAcerca {
+                .seccionInfoPersonal {
+                    grid-template-rows: 72% 28%;
+                    gap: 0;
+
+
+                    .contenedorImg {
+                        padding: 10% 0 10% 0;
+
+                        img {
+                            width: 15em;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+
+}
+
+/* Media Query para Moviles S */
+@media (max-width: 320px) {
+
+    // Header
+    .grilla {
+        header {
+            padding: 0 5%;
+        }
+    }
+
+
+
+    // Proyectos
+    .grilla {
+        .mainProyectos {
+
+            .seccionProyectoTexto {
+                padding: 5%;
+
+                .card {
+                    width: 80vw;
+                    height: 60vh;
 
                     img {
-                        width: 18em;
+                        width: 100%;
                         height: auto;
                     }
-                }
-            }
-
-            .seccionAcercaHerramientas {
-                text-align: center;
-
-                .acercadeHerramientas {
-                    h2 {}
-
-                    p {}
-                }
-
-                .contenedorHerramientas {
-                    .divBoton {
-                        display: flex;
-                        justify-content: center;
-
-                        .botonDesplegable {
-                            .iconoBoton {}
-                        }
-                    }
-
-                    .contenedorCards {
-
-                        .cards {}
-                    }
-                }
-            }
-        }
-
-    }
-
-
-    .grilla .mainProyectos {
-
-        .seccionProyectoTexto {
-            grid-template-columns: 1fr;
-
-            .card {
-                width: 70vw;
-                height: 70vh;
-
-                img {
-                    width: 100%;
-                    height: auto;
-                }
-            }
-        }
-    }
-
-    .grilla .mainContacto {
-        padding: 1rem;
-
-        .seccionContactoTexto {
-
-            .contactoContenedor {
-                grid-template-columns: 1fr;
-
-                .contactoTexto {
-                    width: 90%;
-
-                    h1 {
-                        font-size: 2.5em;
-                    }
-
-                    p {}
-                }
-
-                .contenidoFormulario {
-                    margin: 30px 0;
-                    width: 70vw;
-
-                    form {
-
-                        .formTipo {
-
-                            label {}
-
-                            input,
-                            textarea {}
-                        }
-
-                        .botonEnviar {}
-                    }
-                }
-            }
-
-        }
-    }
-
-    .grilla footer {
-
-        .redeSociales {
-            width: 100%;
-        }
-    }
-}
-
-
-@media(max-width: 450px) {
-    .grilla .mainAcercaDe {
-
-        .contenedorGrillaAcerca {
-            .seccionInfoPersonal {
-                grid-template-rows: 72% 28%;
-                gap: 0;
-
-
-                .acercaDeTexto {
-
-
-                    h1 {}
-
-                    p {}
-                }
-
-                .contenedorImg {
-                    padding: 10% 0 10% 0;
-
-                    img {
-                        width: 15em;
-                    }
-                }
-            }
-
-            .seccionAcercaHerramientas {
-
-                .acercadeHerramientas {
-                    h2 {}
-
-                    p {}
-                }
-
-                .contenedorHerramientas {
-                    .divBoton {
-
-                        .botonDesplegable {
-                            .iconoBoton {}
-                        }
-                    }
-
-                    .contenedorCards {
-
-                        .cards {}
-                    }
-                }
-            }
-        }
-
-    }
-}
-
-@media (max-width: 320px) {
-    .grilla header {
-        padding: 0 5%;
-    }
-
-    .grilla .mainProyectos {
-
-        .seccionProyectoTexto {
-            padding: 5%;
-
-            .card {
-                width: 80vw;
-                height: 60vh;
-
-                img {
-                    width: 100%;
-                    height: auto;
                 }
             }
         }

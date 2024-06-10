@@ -17,7 +17,7 @@ body {
 .grilla {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
   height: 100vh;
 }
@@ -36,7 +36,7 @@ a.circular {
 
 .grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios .boton {
   display: inline-block;
-  padding: 3% 11%;
+  padding: 3% 6%;
   background: #0ef;
   color: #1f242d;
   border-radius: 40px;
@@ -53,7 +53,12 @@ a.circular {
   border: none;
 }
 
-.grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h1, .grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h2, .grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h3, .grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h4, .grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h5, .grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h6 {
+.grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h1,
+.grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h2,
+.grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h3,
+.grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h4,
+.grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h5,
+.grilla .mainProyectos .seccionProyectoTexto .card .cardInfo h6 {
   color: #1f242d;
   font-size: 1.7rem;
   font-weight: 600;
@@ -65,7 +70,8 @@ a.circular {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0 8.5%;
+  padding: 4% 8.5%;
+  min-height: 170px;
 }
 .grilla header .navbar {
   width: 100%;
@@ -74,6 +80,7 @@ a.circular {
   max-width: 100%;
   margin: 0;
   width: 100%;
+  padding: 0%;
 }
 .grilla header .navbar .container .logo {
   font-size: 25px;
@@ -82,6 +89,7 @@ a.circular {
 }
 .grilla header .navbar .container .botonMenu {
   border: none;
+  padding: 0;
 }
 .grilla header .navbar .container .botonMenu:focus {
   box-shadow: none;
@@ -93,6 +101,7 @@ a.circular {
   flex-grow: 0;
 }
 .grilla header .navbar .container .menu ul {
+  display: flex;
   align-items: center;
   column-gap: 20px;
 }
@@ -111,33 +120,43 @@ a.circular {
   justify-content: center;
   align-items: center;
   grid-area: main;
+  opacity: 0; /* Para que inicialmente sea invisible */
+  transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
+  animation: fadeInUp 1s ease-out forwards; /* Aplicar animación */
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .grilla .main-index .seccionInicioTexto {
   color: #fff;
-  width: 95%;
+  width: 100%;
+  padding: 0 4% 0 10%;
 }
 .grilla .main-index .seccionInicioTexto .inicioContenedor {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   width: 100%;
 }
 .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto {
-  width: 75%;
+  width: 100%;
 }
 .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto h1 {
-  font-size: 2rem;
+  font-size: 3.2rem;
   font-weight: 700;
 }
 .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto h2 {
-  font-size: 2.9rem;
+  font-size: 3rem;
   font-weight: 700;
   margin: 1% 0 1% 0;
 }
 .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto h3 {
-  font-size: 2rem;
+  font-size: 3.2rem;
   font-weight: 700;
 }
 .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto h3 span {
@@ -145,16 +164,16 @@ a.circular {
 }
 .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto p {
   margin: 3% 0 3% 0;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto div .botonCV {
   display: inline-block;
-  padding: 2% 3%;
+  padding: 18px 28px;
   background: #0ef;
   color: #1f242d;
   border-radius: 40px;
   box-shadow: 0 0 10px #0ef;
-  font-size: 1rem;
+  font-size: 18px;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1px;
@@ -170,7 +189,7 @@ a.circular {
   justify-content: center;
 }
 .grilla .main-index .seccionInicioTexto .inicioContenedor .imgPrincipal img {
-  width: 25vw;
+  width: 22vw;
 }
 
 .grilla .mainAcercaDe {
@@ -296,7 +315,6 @@ a.circular {
 }
 .grilla .mainProyectos .seccionProyectoTexto .card {
   width: 23vw;
-  height: 55vh;
 }
 .grilla .mainProyectos .seccionProyectoTexto .card .cardInfo p {
   color: #1f242d;
@@ -304,18 +322,14 @@ a.circular {
   font-weight: 500;
 }
 .grilla .mainProyectos .seccionProyectoTexto .card .cardInfo a {
-  background-color: #1f242d;
-  color: #0ef;
-  font-size: 1.1rem;
-  font-weight: 500;
-  border-color: #0ef;
-}
-.grilla .mainProyectos .seccionProyectoTexto .card .cardInfo a:hover {
   background-color: #0ef;
   color: #1f242d;
   font-size: 1.1rem;
   font-weight: 500;
   border-color: #1f242d;
+}
+.grilla .mainProyectos .seccionProyectoTexto .card .cardInfo a:hover {
+  border-color: #0ef;
   transition: 0.5s ease;
 }
 
@@ -326,17 +340,23 @@ a.circular {
   align-items: center;
 }
 .grilla .mainServicios .seccionServicios {
-  padding: 0 10rem;
+  padding: 0 8% 0 8%;
 }
 .grilla .mainServicios .seccionServicios .contenedorServicios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  gap: 2rem;
+  gap: 3rem;
 }
 .grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #323946;
-  padding: 2rem 1rem 3rem;
+  width: 100%;
+  height: auto;
+  padding: 4%;
   border-radius: 2rem;
   text-align: center;
   border: 0.2rem solid #1f242d;
@@ -347,18 +367,18 @@ a.circular {
   transform: scale(1.02);
 }
 .grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios .icono {
-  font-size: 6rem;
+  font-size: 3.5rem;
   color: #0ef;
 }
 .grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios h1,
 .grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios h2,
 .grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios h3 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #fff;
 }
 .grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios p {
-  font-size: 1.4rem;
-  margin: 1rem 0 3rem;
+  font-size: 1.2rem;
+  padding: 2% 2% 3%;
   color: #fff;
 }
 .grilla .mainContacto {
@@ -422,19 +442,15 @@ a.circular {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #1f242d;
-  color: #0ef;
-  font-size: 1.1rem;
-  font-weight: 500;
-  border-color: #0ef;
-  border-radius: 5px;
-}
-.grilla .mainContacto .seccionContactoTexto .contactoContenedor .contenidoFormulario form .botonEnviar:hover {
   background-color: #0ef;
   color: #1f242d;
   font-size: 1.1rem;
   font-weight: 500;
   border-color: #1f242d;
+  border-radius: 5px;
+}
+.grilla .mainContacto .seccionContactoTexto .contactoContenedor .contenidoFormulario form .botonEnviar:hover {
+  border-color: #0ef;
   transition: 0.5s ease;
 }
 
@@ -461,7 +477,7 @@ a.circular {
   background: transparent;
   border: 1px solid #0ef;
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: 25px;
   color: #0ef;
   text-decoration: none;
   transition: 0.5s ease;
@@ -472,18 +488,42 @@ a.circular {
   box-shadow: 0 0 20px #0ef;
 }
 
+/* Media Query para Portatiles L */
 @media (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .imgPrincipal img {
+    width: 27vw;
+  }
   .grilla .mainProyectos .seccionProyectoTexto .card {
     width: 26vw;
     height: 55vh;
   }
+  .grilla footer .redeSociales {
+    width: 40%;
+  }
 }
+/* Media Query para Portatiles */
 @media (max-width: 1024px) {
-  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto {
-    width: 87%;
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 1% 0 1% 0;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto h3 {
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto div .botonCV {
+    padding: 14px 24px;
   }
   .grilla .main-index .seccionInicioTexto .inicioContenedor .imgPrincipal img {
-    width: 35vw;
+    width: 30vw;
   }
   .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal {
     grid-template-columns: 1fr;
@@ -506,13 +546,35 @@ a.circular {
   .grilla .mainProyectos .seccionProyectoTexto .card {
     width: 33vw;
   }
+  .grilla .mainServicios {
+    padding: 4% 0 4% 0;
+  }
+  .grilla .mainServicios .seccionServicios .contenedorServicios {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+  }
+  .grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios {
+    width: 37vw;
+  }
+  .grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios:nth-child(3) {
+    grid-column: span 2;
+    justify-self: center;
+  }
+  .grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios .boton {
+    padding: 2% 5%;
+  }
   .grilla .mainContacto .seccionContactoTexto .contactoContenedor .contactoTexto {
     width: 90%;
   }
   .grilla .mainContacto .seccionContactoTexto .contactoContenedor .contenidoFormulario {
     width: 35vw;
   }
+  .grilla footer .redeSociales {
+    width: 100%;
+  }
 }
+/* Media Query para encabezado estilo hamburguesa */
 @media (max-width: 991px) {
   .grilla header .navbar .container .menu {
     position: absolute;
@@ -522,7 +584,7 @@ a.circular {
     z-index: 1;
   }
 }
-/* Media Query para dispositivos móviles */
+/* Media Query para Tablets */
 @media (max-width: 768px) {
   .grilla {
     grid-template-columns: 1fr;
@@ -534,6 +596,9 @@ a.circular {
   .grilla .main-index {
     padding: 1rem;
   }
+  .grilla .main-index .seccionInicioTexto {
+    padding: 0 4% 0 4%;
+  }
   .grilla .main-index .seccionInicioTexto .inicioContenedor {
     grid-template-columns: 1fr;
   }
@@ -541,11 +606,32 @@ a.circular {
     width: 100%;
     text-align: center;
   }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto h1 {
+    font-size: 3rem;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto h2 {
+    font-size: 2.8rem;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto h3 {
+    font-size: 3rem;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto p {
+    font-size: 1.3rem;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto div .botonCV {
+    padding: 18px 28px;
+    font-size: 18px;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto div .botonCV:hover {
+    background: #0ef;
+    color: #1f242d;
+    border: none;
+  }
   .grilla .main-index .seccionInicioTexto .inicioContenedor .imgPrincipal {
-    padding: 30px 0;
+    padding: 70px 0;
   }
   .grilla .main-index .seccionInicioTexto .inicioContenedor .imgPrincipal img {
-    width: 100%;
+    width: 50vw;
     height: auto;
   }
   .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal {
@@ -576,6 +662,23 @@ a.circular {
     width: 100%;
     height: auto;
   }
+  .grilla .mainServicios {
+    padding: 0 0 6% 0;
+    width: 100%;
+  }
+  .grilla .mainServicios .seccionServicios {
+    padding: 0%;
+  }
+  .grilla .mainServicios .seccionServicios .contenedorServicios {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios {
+    width: 90vw;
+  }
+  .grilla .mainServicios .seccionServicios .contenedorServicios .cajaServicios:nth-child(3) {
+    grid-column: auto;
+  }
   .grilla .mainContacto {
     padding: 1rem;
   }
@@ -596,7 +699,30 @@ a.circular {
     width: 100%;
   }
 }
-@media (max-width: 450px) {
+/* Media Query para Moviles L */
+@media (max-width: 425px) {
+  .grilla .main-index .seccionInicioTexto {
+    padding: 0 4% 0 4%;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto h1 {
+    font-size: 2.4rem;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto h2 {
+    font-size: 2.2rem;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto h3 {
+    font-size: 2.4rem;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto p {
+    font-size: 1.2rem;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .inicioTexto div .botonCV {
+    padding: 14px 24px;
+  }
+  .grilla .main-index .seccionInicioTexto .inicioContenedor .imgPrincipal img {
+    width: 70vw;
+    height: auto;
+  }
   .grilla .mainAcercaDe .contenedorGrillaAcerca .seccionInfoPersonal {
     grid-template-rows: 72% 28%;
     gap: 0;
@@ -608,6 +734,7 @@ a.circular {
     width: 15em;
   }
 }
+/* Media Query para Moviles S */
 @media (max-width: 320px) {
   .grilla header {
     padding: 0 5%;

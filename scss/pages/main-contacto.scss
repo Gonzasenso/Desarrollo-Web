@@ -1,82 +1,82 @@
-.grilla .mainContacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: main;
+.grilla {
+    .mainContacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: main;
 
-    .seccionContactoTexto {
-        width: 95%;
-        .contactoContenedor {
-            display: grid;
-            justify-items: center;
-            align-items: center;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-            width: 100%;
+        .seccionContactoTexto {
+            width: 95%;
 
-            .contactoTexto {
-                width: 70%;
-                text-align: center;
+            .contactoContenedor {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                width: 100%;
 
-                h1 {
-                    font-size: 3.5rem;
-                    font-weight: bold;
-                    color: #0ef;
-                    margin-bottom: 20px;
-                }
+                .contactoTexto {
+                    width: 70%;
+                    text-align: center;
 
-                p {
-                    font-size: 1.4rem;
-                    font-weight: 300;
-                    color: #fff;
-                }
-            }
-
-            .contenidoFormulario {
-                width: 26vw;
-                background-color: #fff;
-                border-radius: 3%;
-                box-shadow: 0 0 10px #fff;
-
-                form {
-                    margin: 3%;
-
-                    .formTipo {
-                        margin-bottom: 2%;
-
-                        label {
-                            display: block;
-                            font-size: 1rem;
-                            font-weight: 500;
-                            margin-bottom: 1%;
-                        }
-
-                        input,
-                        textarea {
-                            width: 100%;
-                            padding: 2.5%;
-                            border: 1px solid #ccc;
-                            border-radius: 10px;
-                        }
+                    h1 {
+                        font-size: 3.5rem;
+                        font-weight: bold;
+                        color: #0ef;
+                        margin-bottom: 20px;
                     }
 
-                    .botonEnviar {
-                        display: block;
-                        width: 100%;
-                        padding: 10px;
-                        background-color: #1f242d;
-                        color: #0ef;
-                        font-size: 1.1rem;
-                        font-weight: 500;
-                        border-color: #0ef;
-                        border-radius: 5px;
-                        &:hover{
+                    p {
+                        font-size: 1.4rem;
+                        font-weight: 300;
+                        color: #fff;
+                    }
+                }
+
+                .contenidoFormulario {
+                    width: 26vw;
+                    background-color: #fff;
+                    border-radius: 3%;
+                    box-shadow: 0 0 10px #fff;
+
+                    form {
+                        margin: 3%;
+
+                        .formTipo {
+                            margin-bottom: 2%;
+
+                            label {
+                                display: block;
+                                font-size: 1rem;
+                                font-weight: 500;
+                                margin-bottom: 1%;
+                            }
+
+                            input,
+                            textarea {
+                                width: 100%;
+                                padding: 2.5%;
+                                border: 1px solid #ccc;
+                                border-radius: 10px;
+                            }
+                        }
+
+                        .botonEnviar {
+                            display: block;
+                            width: 100%;
+                            padding: 10px;
                             background-color: #0ef;
                             color: #1f242d;
                             font-size: 1.1rem;
                             font-weight: 500;
                             border-color: #1f242d;
-                            transition: .5s ease;
+                            border-radius: 5px;
+
+                            &:hover {
+                                border-color: #0ef;
+                                transition: .5s ease;
+                            }
                         }
                     }
                 }

@@ -1,14 +1,17 @@
-@mixin flex($flex-direction, $justify-content, $align-items){
+@mixin flex($flex-direction, $justify-content, $align-items) {
     display: flex;
     flex-direction: $flex-direction;
     justify-content: $justify-content;
     align-items: $align-items;
-};
+}
 
-@mixin estilosTexto($size, $weight, $style: null){
+;
+
+@mixin estilosTexto($size, $weight, $style: null) {
     font-size: $size;
     font-weight: $weight;
-    @if $style != null{
+
+    @if $style !=null {
         font-style: $style;
     }
 }

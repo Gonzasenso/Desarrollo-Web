@@ -4,35 +4,46 @@
         justify-content: center;
         align-items: center;
         grid-area: main;
+        opacity: 0; /* Para que inicialmente sea invisible */
+        transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
+        animation: fadeInUp 1s ease-out forwards; /* Aplicar animación */
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
         .seccionInicioTexto {
             color: #fff;
-            width: 95%;
+            width: 100%;
+            padding: 0 4% 0 10%;
 
             .inicioContenedor {
                 display: grid;
                 justify-items: center;
                 align-items: center;
-                grid-template-columns: 55% 45%;
+                grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: 1fr;
                 width: 100%;
 
                 .inicioTexto {
-                    width: 75%;
+                    width: 100%;
 
                     h1 {
-                        font-size: 2rem;
+                        font-size: 3.2rem;
                         font-weight: 700;
                     }
 
                     h2 {
-                        font-size: 2.9rem;
+                        font-size: 3rem;
                         font-weight: 700;
                         margin: 1% 0 1% 0;
                     }
 
                     h3 {
-                        font-size: 2rem;
+                        font-size: 3.2rem;
                         font-weight: 700;
 
                         span {
@@ -42,19 +53,19 @@
 
                     p {
                         margin: 3% 0 3% 0;
-                        font-size: 1.1rem;
+                        font-size: 1.3rem;
                     }
 
                     div {
 
                         .botonCV {
                             display: inline-block;
-                            padding: 2% 3%;
+                            padding: 18px 28px;
                             background: #0ef;
                             color: #1f242d;
                             border-radius: 40px;
                             box-shadow: 0 0 10px #0ef;
-                            font-size: 1rem;
+                            font-size: 18px;
                             text-decoration: none;
                             font-weight: 600;
                             letter-spacing: 1px;
@@ -74,7 +85,7 @@
                     justify-content: center;
 
                     img {
-                        width: 25vw;
+                        width: 22vw;
                     }
                 }
             }
