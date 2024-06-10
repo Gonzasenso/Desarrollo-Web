@@ -1,133 +1,161 @@
 /* Media Query para Portatiles L */
 @media(max-width: 1200px) {
 
+    // HTML
     html {
         font-size: 90%;
     }
 
-    .grilla .mainServicios {
+    // Inicio
+    .grilla {
+        .main-index {
+            .seccionInicioTexto {
+                .inicioContenedor {
 
+                    .imgPrincipal {
+                        img {
+                            width: 27vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-        .seccionServicios {
+    // Proyectos
+    .grilla {
+        .mainProyectos {
 
-            .contenedorServicios {
+            .seccionProyectoTexto {
 
-
-                .cajaServicios {
-
-                    &:hover {}
-
-                    .icono {}
-
-                    h1,
-                    h2,
-                    h3 {}
-
-                    p {}
-
-                    .boton {}
+                .card {
+                    width: 26vw;
+                    height: 55vh;
                 }
             }
         }
     }
 
 
-    .grilla .mainProyectos {
+    // Footer
+    .grilla {
+        footer {
 
-        .seccionProyectoTexto {
-
-            .card {
-                width: 26vw;
-                height: 55vh;
+            .redeSociales {
+                width: 40%;
             }
         }
     }
 }
 
+
+
+
 /* Media Query para Portatiles */
 @media (max-width: 1024px) {
 
-    .grilla .main-index {
-        .seccionInicioTexto {
-            .inicioContenedor {
-                .inicioTexto {
-                    width: 87%;
-                }
+    // Inicio
+    .grilla {
+        .main-index {
 
-                .imgPrincipal {
-                    img {
-                        width: 35vw;
-                    }
-                }
-            }
-        }
-    }
+            .seccionInicioTexto {
 
+                .inicioContenedor {
 
-    .grilla .mainAcercaDe {
-        .contenedorGrillaAcerca {
-            .seccionInfoPersonal {
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(2, 1fr);
-                row-gap: 5%;
+                    .inicioTexto {
 
-                .acercaDeTexto {
-                    text-align: center;
+                        h1 {
+                            font-size: 2.6rem;
+                            font-weight: 700;
+                        }
 
-                    h1 {}
+                        h2 {
+                            font-size: 2.4rem;
+                            font-weight: 700;
+                            margin: 1% 0 1% 0;
+                        }
 
-                    p {}
-                }
+                        h3 {
+                            font-size: 2.6rem;
+                            font-weight: 700;
+                        }
 
-                .contenedorImg {
-                    padding: 0;
+                        div {
 
-                    img {}
-                }
-            }
+                            .botonCV {
+                                padding: 14px 24px;
 
-            .seccionAcercaHerramientas {
-                .acercadeHerramientas {
-                    h2 {}
-
-                    p {}
-                }
-
-                .contenedorHerramientas {
-                    .divBoton {
-
-                        .botonDesplegable {
-                            .iconoBoton {}
+                            }
                         }
                     }
 
-                    .contenedorCards {
+                    .imgPrincipal {
 
-                        .cards {
-                            justify-content: center;
-                            flex-wrap: wrap;
+                        img {
+                            width: 30vw;
                         }
                     }
                 }
             }
         }
+    }
 
+    // Acerca de
+    .grilla {
+        .mainAcercaDe {
+            .contenedorGrillaAcerca {
+                .seccionInfoPersonal {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(2, 1fr);
+                    row-gap: 5%;
+
+                    .acercaDeTexto {
+                        text-align: center;
+
+                    }
+
+                    .contenedorImg {
+                        padding: 0;
+
+                    }
+                }
+
+                .seccionAcercaHerramientas {
+
+                    .contenedorHerramientas {
+
+                        .contenedorCards {
+
+                            .cards {
+                                justify-content: center;
+                                flex-wrap: wrap;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
     }
 
 
-    .grilla .mainProyectos {
+    // Proyectos
+    .grilla {
+        .mainProyectos {
 
-        .seccionProyectoTexto {
-            grid-template-columns: repeat(2, 1fr);
+            .seccionProyectoTexto {
+                grid-template-columns: repeat(2, 1fr);
 
-            .card {
-                width: 33vw;
+                .card {
+                    width: 33vw;
+                }
             }
         }
     }
 
 
 
+    // Servicios
     .grilla {
         .mainServicios {
             padding: 4% 0 4% 0;
@@ -147,16 +175,6 @@
                             justify-self: center;
                         }
 
-                        &:hover {}
-
-                        .icono {}
-
-                        h1,
-                        h2,
-                        h3 {}
-
-                        p {}
-
                         .boton {
                             padding: 2% 5%;
                         }
@@ -167,171 +185,205 @@
     }
 
 
+    // Contacto
+    .grilla {
+        .mainContacto {
 
+            .seccionContactoTexto {
 
+                .contactoContenedor {
 
-    .grilla .mainContacto {
+                    .contactoTexto {
+                        width: 90%;
 
-        .seccionContactoTexto {
+                    }
 
-            .contactoContenedor {
+                    .contenidoFormulario {
+                        width: 35vw;
 
-                .contactoTexto {
-                    width: 90%;
-
-                    h1 {}
-
-                    p {}
-                }
-
-                .contenidoFormulario {
-                    width: 35vw;
-
-                    form {
-
-                        .formTipo {
-
-                            label {}
-
-                            input,
-                            textarea {}
-                        }
-
-                        .botonEnviar {}
                     }
                 }
-            }
 
+            }
         }
     }
+
+
+
+    // Footer
+    .grilla {
+        footer {
+
+            .redeSociales {
+                width: 100%;
+            }
+        }
+    }
+
 }
+
+
 
 /* Media Query para encabezado estilo hamburguesa */
 @media(max-width: 991px) {
-    .grilla header {
-        .navbar {
-            .container {
-                .menu {
-                    position: absolute;
-                    background: #1f242d;
-                    width: 100%;
-                    top: 90px;
-                    z-index: 1;
+
+    // Header
+    .grilla {
+        header {
+            .navbar {
+                .container {
+                    .menu {
+                        position: absolute;
+                        background: #1f242d;
+                        width: 100%;
+                        top: 90px;
+                        z-index: 1;
+                    }
                 }
             }
         }
     }
+
 }
 
 
 /* Media Query para Tablets */
 @media (max-width: 768px) {
+
+    // Grilla
     .grilla {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
 
-    .grilla header {
-        height: 171.8px;
-    }
 
-    .grilla .main-index {
-        padding: 1rem;
-
-        .seccionInicioTexto {
-            .inicioContenedor {
-                grid-template-columns: 1fr;
-
-                .inicioTexto {
-                    width: 100%;
-                    text-align: center;
-                }
-
-                .imgPrincipal {
-                    padding: 50px 0;
-
-                    img {
-                        width: 80%;
-                        height: auto;
-                    }
-                }
-            }
+    // Header
+    .grilla {
+        header {
+            height: 171.8px;
         }
     }
 
 
 
-    .grilla .mainAcercaDe {
-        .contenedorGrillaAcerca {
-            .seccionInfoPersonal {
+    // Inicio
+    .grilla {
+        .main-index {
+            padding: 1rem;
 
-                padding: 0 5% 0 5%;
+            .seccionInicioTexto {
+                padding: 0 4% 0 4%;
 
-                .acercaDeTexto {
+                .inicioContenedor {
+                    grid-template-columns: 1fr;
 
+                    .inicioTexto {
+                        width: 100%;
+                        text-align: center;
 
-                    h1 {}
+                        h1 {
+                            font-size: 3rem;
+                        }
 
-                    p {}
-                }
+                        h2 {
+                            font-size: 2.8rem;
+                        }
 
-                .contenedorImg {
-                    padding-top: 20px;
+                        h3 {
+                            font-size: 3rem;
+                        }
 
-                    img {
-                        width: 18em;
-                        height: auto;
-                    }
-                }
-            }
+                        p {
+                            font-size: 1.3rem;
+                        }
 
-            .seccionAcercaHerramientas {
-                text-align: center;
+                        div {
 
-                .acercadeHerramientas {
-                    h2 {}
+                            .botonCV {
+                                padding: 18px 28px;
+                                font-size: 18px;
 
-                    p {}
-                }
-
-                .contenedorHerramientas {
-                    .divBoton {
-                        display: flex;
-                        justify-content: center;
-
-                        .botonDesplegable {
-                            .iconoBoton {}
+                                &:hover {
+                                    background: #0ef;
+                                    color: #1f242d;
+                                    border: none;
+                                }
+                            }
                         }
                     }
 
-                    .contenedorCards {
+                    .imgPrincipal {
+                        padding: 70px 0;
 
-                        .cards {}
+                        img {
+                            width: 50vw;
+                            height: auto;
+                        }
                     }
                 }
             }
         }
-
     }
 
 
-    .grilla .mainProyectos {
+    // Acerca de
+    .grilla {
+        .mainAcercaDe {
+            .contenedorGrillaAcerca {
+                .seccionInfoPersonal {
 
-        .seccionProyectoTexto {
-            grid-template-columns: 1fr;
+                    padding: 0 5% 0 5%;
 
-            .card {
-                width: 70vw;
-                height: 70vh;
+                    .contenedorImg {
+                        padding-top: 20px;
 
-                img {
-                    width: 100%;
-                    height: auto;
+                        img {
+                            width: 18em;
+                            height: auto;
+                        }
+                    }
+                }
+
+                .seccionAcercaHerramientas {
+                    text-align: center;
+
+                    .contenedorHerramientas {
+                        .divBoton {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+    // Proyectos
+    .grilla {
+        .mainProyectos {
+
+            .seccionProyectoTexto {
+                grid-template-columns: 1fr;
+
+                .card {
+                    width: 70vw;
+                    height: 70vh;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
                 }
             }
         }
     }
 
+
+
+    // Servicios
     .grilla {
         .mainServicios {
             padding: 0 0 6% 0;
@@ -352,17 +404,6 @@
                             grid-column: auto;
                         }
 
-                        &:hover {}
-
-                        .icono {}
-
-                        h1,
-                        h2,
-                        h3 {}
-
-                        p {}
-
-                        .boton {}
                     }
                 }
             }
@@ -370,130 +411,157 @@
     }
 
 
+    // Contacto
+    .grilla {
+        .mainContacto {
+            padding: 1rem;
 
-    .grilla .mainContacto {
-        padding: 1rem;
+            .seccionContactoTexto {
 
-        .seccionContactoTexto {
+                .contactoContenedor {
+                    grid-template-columns: 1fr;
 
-            .contactoContenedor {
-                grid-template-columns: 1fr;
+                    .contactoTexto {
+                        width: 90%;
 
-                .contactoTexto {
-                    width: 90%;
-
-                    h1 {
-                        font-size: 2.5em;
-                    }
-
-                    p {}
-                }
-
-                .contenidoFormulario {
-                    margin: 30px 0;
-                    width: 70vw;
-
-                    form {
-
-                        .formTipo {
-
-                            label {}
-
-                            input,
-                            textarea {}
+                        h1 {
+                            font-size: 2.5em;
                         }
 
-                        .botonEnviar {}
+                    }
+
+                    .contenidoFormulario {
+                        margin: 30px 0;
+                        width: 70vw;
+
                     }
                 }
-            }
 
+            }
         }
     }
 
-    .grilla footer {
 
-        .redeSociales {
-            width: 100%;
+
+    // Footer
+    .grilla {
+        footer {
+
+            .redeSociales {
+                width: 100%;
+            }
         }
     }
 }
 
 /* Media Query para Moviles L */
 @media(max-width: 425px) {
-    .grilla .mainAcercaDe {
 
-        .contenedorGrillaAcerca {
-            .seccionInfoPersonal {
-                grid-template-rows: 72% 28%;
-                gap: 0;
+    // Inicio
+    .grilla {
+        .main-index {
 
+            .seccionInicioTexto {
+                padding: 0 4% 0 4%;
 
-                .acercaDeTexto {
+                .inicioContenedor {
 
+                    .inicioTexto {
 
-                    h1 {}
+                        h1 {
+                            font-size: 2.4rem;
+                        }
 
-                    p {}
-                }
+                        h2 {
+                            font-size: 2.2rem;
+                        }
 
-                .contenedorImg {
-                    padding: 10% 0 10% 0;
+                        h3 {
+                            font-size: 2.4rem;
+                        }
 
-                    img {
-                        width: 15em;
-                    }
-                }
-            }
+                        p {
+                            font-size: 1.2rem;
+                        }
 
-            .seccionAcercaHerramientas {
+                        div {
 
-                .acercadeHerramientas {
-                    h2 {}
-
-                    p {}
-                }
-
-                .contenedorHerramientas {
-                    .divBoton {
-
-                        .botonDesplegable {
-                            .iconoBoton {}
+                            .botonCV {
+                                padding: 14px 24px;
+                            }
                         }
                     }
 
-                    .contenedorCards {
+                    .imgPrincipal {
 
-                        .cards {}
+                        img {
+                            width: 70vw;
+                            height: auto;
+                        }
                     }
                 }
             }
         }
-
     }
+
+
+    // Acerca de
+    .grilla {
+        .mainAcercaDe {
+
+            .contenedorGrillaAcerca {
+                .seccionInfoPersonal {
+                    grid-template-rows: 72% 28%;
+                    gap: 0;
+
+
+                    .contenedorImg {
+                        padding: 10% 0 10% 0;
+
+                        img {
+                            width: 15em;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+
 }
 
 /* Media Query para Moviles S */
 @media (max-width: 320px) {
-    .grilla header {
-        padding: 0 5%;
+
+    // Header
+    .grilla {
+        header {
+            padding: 0 5%;
+        }
     }
 
-    .grilla .mainProyectos {
 
-        .seccionProyectoTexto {
-            padding: 5%;
 
-            .card {
-                width: 80vw;
-                height: 60vh;
+    // Proyectos
+    .grilla {
+        .mainProyectos {
 
-                img {
-                    width: 100%;
-                    height: auto;
+            .seccionProyectoTexto {
+                padding: 5%;
+
+                .card {
+                    width: 80vw;
+                    height: 60vh;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
                 }
             }
         }
     }
+
 
 }
